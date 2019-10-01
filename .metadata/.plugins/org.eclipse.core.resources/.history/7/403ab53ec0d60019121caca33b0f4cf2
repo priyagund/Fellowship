@@ -1,0 +1,16 @@
+package com.bridgelabz.dtatstructure;
+
+public class QueueOp 
+{
+public static void main(String[] args) {
+	System.out.println("enque and deque element in queue");
+	Queue q=new Queue();
+	q.enQueue(10);
+	q.enQueue(20);
+	q.enQueue(30);
+	q.show();
+	
+	q.deQueue();
+	q.show();
+}
+}

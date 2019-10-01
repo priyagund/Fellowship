@@ -1,0 +1,26 @@
+package com.bridgelabz.datastructure;
+
+public class LinkListForStr 
+{
+	static NodeGen head;
+	
+	 public static void InsertAt(String str) 
+	{
+		NodeGen node=new NodeGen();
+		if(head==null) 
+		{
+			node=head;
+		}
+		else 
+		{
+			NodeGen n=head;
+			while(n.next!=null)
+			{
+              n=n.next;
+			}
+			n.next=node;
+		}
+	}
+	
+
+}

@@ -1,0 +1,22 @@
+package com.bridgelabz.model;
+
+import java.util.List;
+
+public class CliniqueModel 
+{
+    private List<Doctors> doctors;
+    private List<Patients> patients;
+	public List<Doctors> getDoctors() {
+		return doctors;
+	}
+	public void setDoctors(List<Doctors> doctors) {
+		this.doctors = doctors;
+	}
+	public List<Patients> getPatients() {
+		return patients;
+	}
+	public void setPatients(List<Patients> patients) {
+		this.patients = patients;
+	}
+   
+}

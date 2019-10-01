@@ -1,0 +1,101 @@
+
+/******************************************************************************
+*  Purpose:Create a Program which creates Banking Cash Counter where people
+           come in to deposit Cash and withdraw Cash.
+*
+*  @author  Priyanka gund
+*  @version 1.0
+*  @since   12-09-2019
+*
+******************************************************************************/
+package com.bridgelabz.dtatstructure;
+
+import com.bridgelazs.utility.Utility;
+
+public class CashCounter 
+{
+public static void main(String[] args)
+{
+	QueueLinkList <Integer>queue=new QueueLinkList <Integer>();
+	System.out.println("enter money available in bank");
+	int money=Utility.getInt();
+	 int data = 0;
+	 int choice;
+	
+	  System.out.println("add person in queue");
+	 int person=Utility.getInt();
+	 int size=person;
+	 for(int i=0;i<person;i++) {
+		 queue.enQueue(i+1);
+	 }
+	 queue.showQueue();
+	 System.out.println("number of person in queue");
+	  queue.showQueue();
+	 do { 
+		  System.out.println("available balance in bank");
+		  System.out.println("enter 1.for  deposit money\n 2.for withdraw money");  
+	      
+		   choice=Utility.getInt();
+		  switch(choice) 
+		  {
+		  case 1:
+				    if(queue.isEmpty()) {
+			    	System.out.println("no person for deposit the amount ");
+				    break;
+				    }
+				    else 
+				    {
+				    	System.out.println("enter amount you want to deposit");
+				    	int depamount=Utility.getInt();
+				    	money=money+depamount;
+				    	System.out.println("you bankbalance is"+money);
+				    	queue.deQueue();
+				    	size--;
+				    	break;
+				    }
+			    
+		  case 2:
+				     if(queue.isEmpty()) {
+				    	System.out.println("no person for withdraw the amount ");
+					    break;
+				     }
+				     else
+				     {
+				    	 System.out.println("enter amount you want to withdraw");
+				    	 int withdrawmoney=Utility.getInt();
+				    	 if(money>withdrawmoney) 
+				    	 {
+				    		 money=money-withdrawmoney;
+				    	     System.out.println("your bank balance is"+money);
+				    	     queue.deQueue();
+				    	    
+					    	break;
+					     }
+				    	 else
+				    	  System.out.println("no money available in bank");
+				    		
+				    	 break;
+				    
+				       }
+				     size--;
+			      
+		        }
+		  queue.showQueue();
+		  
+		  if(size==0) {
+		    	System.out.println("no person in queue");
+		    
+		          }
+		  queue.showQueue();
+		  System.out.println("do you want to continue then enter 1 otherwise enter 0");
+		  	
+		    choice=Utility.getInt();
+		    
+		     
+	  }	
+	    while(choice==1); 
+				     
+		  
+	  }
+}
+

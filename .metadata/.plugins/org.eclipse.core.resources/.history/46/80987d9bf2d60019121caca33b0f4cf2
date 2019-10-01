@@ -1,0 +1,10 @@
+package com.bridgelabz.dtatstructure;
+
+public class Dequeue<T>
+{
+	LinkedList<T> list=new LinkedList<T>();
+	int rear; 
+	int front;
+	
+	public void 
+}

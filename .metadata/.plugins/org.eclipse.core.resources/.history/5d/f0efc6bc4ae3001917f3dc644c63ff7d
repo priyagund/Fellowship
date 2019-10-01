@@ -1,0 +1,5 @@
+package com.bridgelabz.creational;
+
+public class SingletonSerializedTest {
+
+}

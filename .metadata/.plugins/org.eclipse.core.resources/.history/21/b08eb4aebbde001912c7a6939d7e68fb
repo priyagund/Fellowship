@@ -1,0 +1,47 @@
+package com.bridgelabz.model;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.List;
+
+import org.codehaus.jackson.JsonParseException;
+import org.codehaus.jackson.map.JsonMappingException;
+import org.codehaus.jackson.map.ObjectMapper;
+import org.codehaus.jackson.type.TypeReference;
+
+public class Operation 
+{
+	File doctorsFileName = new File("/home/bridgeit/Desktop/priya/Felloship/CorePrograms/files/doctor.json");
+	File patientsFileName = new File("/home/bridgeit/Desktop/priya/Felloship/CorePrograms/files/patient.json");
+	File appointmentFileName = new File("/home/bridgeit/Desktop/priya/Felloship/CorePrograms/files/appointment.json");
+	
+   List<Doctors>doctor;
+   List<Patients>patient;
+   List<Appointment>appointment;
+   ObjectMapper objectmapper = new ObjectMapper();
+   
+   //constructor for write value 
+   Operation() throws JsonParseException, JsonMappingException, IOException
+   {
+	   objectmapper.readValue(doctorsFileName,(TypeReference) doctor);
+	   objectmapper.readValue(patientsFileName,(TypeReference)patient );
+	   objectmapper.readValue(appointmentFileName,(TypeReference)appointment);
+   }
+	   
+   public void searchDoctor(int searchBy) 
+   {
+				String ldate = LocalDate.now().toString();
+				switch (searchBy) {
+				case 1:
+					System.out.print("\nEnter the Doctor Name:");
+					String name = Utility.getStr();
+					for (Doctors doctor : doctorList) {
+						if (doctor.getDoctorName().equalsIgnoreCase(name)) {
+							System.out.println("*******\ndoctor Id :" + doctor.getDoctorId());
+							System.out.println("doctor Name :" + doctor.getDoctorName());
+							System.out.println("Shift :" + doctor.getAvailability());
+
+   }
+   
+   
+}   

@@ -1,0 +1,74 @@
+package com.bridgelabz.oops;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.codehaus.jackson.map.ObjectMapper;
+
+import com.bridgelabz.model.Doctors;
+import com.bridgelabz.model.DoctorsModel;
+import com.bridgelabz.model.Patients;
+import com.bridgelabz.model.PatientsModel;
+ public class Clinique
+ {
+	 public static void main(String[] args)
+	 {
+		ObjectMapper mapper=new ObjectMapper();
+		DoctorsModel doctormodel=new DoctorsModel();
+		PatientsModel patientsmodel=new PatientsModel();
+		
+		ArrayList<Doctors>doctorlist=new ArrayList<Doctors>();
+		ArrayList<Patients>patientlist=new ArrayList<Patients>();
+		
+		//adding doctor to clinique
+		 
+		Doctors doctorENT=new Doctors();
+		doctorENT.setId("ent");
+		doctorENT.setName("dr.Priyanka");
+		doctorENT.setSpecilization("ent");
+		doctorENT.setTime("am");
+		doctorENT.setIsfull(false);
+		
+		Doctors doctorheart=new Doctors();
+		doctorheart.setId("heart");
+		doctorheart.setName("dr.shivanjali");
+		doctorheart.setSpecilization("heart");
+		doctorheart.setTime("am");
+		doctorheart.setIsfull(false);
+		
+		Doctors doctorhomeo=new Doctors();
+		doctorhomeo.setId("homeo");
+		doctorhomeo.setName("dr.vaishnavi");
+		doctorhomeo.setSpecilization("homeo");
+		doctorhomeo.setTime("pm");
+		doctorhomeo.setIsfull(false);
+		
+		Doctors doctordentist=new Doctors();
+		doctordentist.setId("dentist");
+		doctordentist.setName("dr.yashashri");
+		doctordentist.setSpecilization("dentist");
+		doctordentist.setTime("pm");
+		doctordentist.setIsfull(false);
+		
+		Doctors doctorphysio=new Doctors();
+		doctorphysio.setId("physio");
+		doctorphysio.setName("dr.vishnu");
+		doctorphysio.setSpecilization("physio");
+		doctorphysio.setTime("pm");
+		doctorphysio.setIsfull(false);
+		
+		doctorlist.add(Doctors);
+		
+		Patients patient=new Patients();
+		patient.setName("vishnu");
+		patient.setId(1);
+		patient.setAge(23);
+		patient.setMobno("9784524554");
+	
+		
+		
+		
+		
+		
+	}
+ }

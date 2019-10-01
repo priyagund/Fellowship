@@ -1,0 +1,9 @@
+package com.bridgelabz.datastructure;
+
+public class LinkListGener<T extends Comparable <T>>
+{
+  Node node=new Node();
+    int data;
+    
+  
+}

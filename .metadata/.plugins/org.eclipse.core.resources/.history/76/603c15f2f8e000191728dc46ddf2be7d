@@ -1,0 +1,16 @@
+package com.bridgelabz.model;
+
+import java.io.IOException;
+
+import org.codehaus.jackson.JsonGenerationException;
+import org.codehaus.jackson.map.JsonMappingException;
+
+public interface IPerson 
+{
+	public Person addPerson() throws JsonGenerationException, JsonMappingException, IOException;
+	public void editperson();
+	public void deletePerson();
+	public Person sortByLastName();
+	public Person sortByZip();
+	public void printReport();
+}

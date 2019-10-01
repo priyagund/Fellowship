@@ -1,0 +1,92 @@
+package com.bridgelabz.oops;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+
+import org.codehaus.jackson.JsonParseException;
+import org.codehaus.jackson.map.JsonMappingException;
+import org.codehaus.jackson.map.ObjectMapper;
+
+import com.bridgelabz.model.Address;
+import com.bridgelabz.model.AddressBook;
+import com.bridgelabz.model.Person;
+
+public class AddressBookManager {
+	public static void main(String[] args) throws JsonParseException, JsonMappingException, IOException {
+		ObjectMapper mapper = new ObjectMapper();
+		AddressBook addressbook = new AddressBook();
+		
+		ArrayList<Person> person = new ArrayList<Person>();
+
+		// add first person in address book
+
+		Person person1 = new Person();
+		String firstname = "priya";
+		person1.setName(firstname);
+		String lastname = "Gund";
+		person1.setLastname(lastname);
+		String phoneno="7066323266";
+		person1.setPhoneno(phoneno);
+		
+		Address address = new Address();
+
+		String state = "Maharastra";
+		address.setState(state);
+		String city = "mumbai";
+		address.setCity(city);
+		String zip = "412207";
+		address.setZip(zip);
+
+		person1.setAddress(address);
+        person.add(person1);
+        
+        //add second person in address book
+        Person person2 = new Person();
+		String firstname2 = "vaishnvi";
+		person2.setName(firstname2);
+		String lastname2 = "Savant";
+		person2.setLastname(lastname2);
+		String phoneno2="9284755415";
+		person2.setPhoneno(phoneno2);
+		
+		Address address1 = new Address();
+		String state2 = "Maharastra";
+		address1.setState(state);
+		String city2 = "pune";
+		address1.setCity(city2);
+		String zip2 = "412208";
+		address1.setZip(zip2);
+
+		person2.setAddress(address1);
+        person.add(person2);
+        
+        
+        // add third person inaddress book
+        Person person3 = new Person();
+        
+        String firstname3="yashashri";
+		person3.setName(firstname2);
+		String lastname3= "jadhav";
+		person3.setLastname(lastname2);
+		String phoneno3="9637313118";
+		person3.setPhoneno(phoneno2);
+		
+
+		Address address2 = new Address();
+		String state3 = "Goa";
+		address2.setState(state);
+		String city3 = "pune";
+		address2.setCity(city3);
+		String zip3 = "412209";
+		address2.setZip(zip3);
+
+		person3.setAddress(address2);
+        person.add(person3);
+        
+        
+        addressbook.setPerson(person);
+        mapper.writeValue(new File("/home/bridgeit/Desktop/priya/Felloship/CorePrograms/files/json files/state.json"),addressbook);
+        
+	}
+}

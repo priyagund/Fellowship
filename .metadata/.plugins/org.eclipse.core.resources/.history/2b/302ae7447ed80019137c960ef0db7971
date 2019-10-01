@@ -1,0 +1,15 @@
+package com.bridgelabz.dtatstructure;
+
+public class AnagramTwoDarray
+{
+    public static void main(String[] args) 
+    {
+    	int[] array=new int[1000];
+    	for (int i = 0; i < array.length; i++) {
+    		array[i]=i;
+    	System.out.print(" "+array[i]);	
+		//int [][] anagram=new int[10][];
+		
+    	}	 
+}
+}

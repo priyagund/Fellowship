@@ -1,0 +1,88 @@
+package com.bridgelaz.addressbook;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.codehaus.jackson.JsonParseException;
+import org.codehaus.jackson.map.JsonMappingException;
+import org.codehaus.jackson.map.ObjectMapper;
+
+import com.bridgelabz.model.Address;
+import com.bridgelabz.model.ImplPerson;
+import com.bridgelabz.model.Person;
+import com.bridgelazs.utility.Utility;
+
+public class AddressBookNew implements ImplPerson {
+	Person person=new Person();
+	Address address=new Address();
+	ObjectMapper mapper=new ObjectMapper();
+
+	
+
+	public void addPerson(List<Person> listOfPerson) {
+		
+		System.out.println("Enter First name");
+		person.setName(Utility.getStr());
+		System.out.println("Enter Last Name");
+		person.setLastname(Utility.getStr());
+		System.out.println("Enter Phone Number");
+		person.setPhoneno(Utility.getStr());
+		System.out.println("Enter City");
+		address.setCity(Utility.getStr());
+		System.out.println("Enter State");
+		address.setState(Utility.getStr());
+		System.out.println("Enter zipCode");
+		address.setZip(Utility.getStr());
+		person.setAddress(address);
+		
+		listOfPerson.add(person);
+		
+		
+	}
+
+	@Override
+	public void editPerson() {
+		
+		
+	}
+
+	@Override
+	public void deletePerson() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void sortByLastName() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void sortByZipCode() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void createAddressBook() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void openAddressBook() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void saveAddressBook(List<Person> listOfPerson) throws JsonParseException, JsonMappingException, IOException {
+		// TODO Auto-generated method stub
+		mapper.writeValue(new File("E:\\Project_Web\\AddressBook\\src\\com\\bridgelaz\\addressbook\\JsonFile\\personAddressBook.json"), listOfPerson);
+	
+	}
+
+}

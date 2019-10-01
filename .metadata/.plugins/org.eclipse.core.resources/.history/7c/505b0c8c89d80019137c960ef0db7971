@@ -1,0 +1,39 @@
+package com.bridgelabz.dtatstructure;
+
+import com.bridgelazs.utility.Utility;
+
+public class CalenderQueue
+{
+  public static void main(String[] args)
+{
+	  int date=1;
+      System.out.println("enter month");
+      int month=Utility.getInt();
+      System.out.println("enter year");
+      int year=Utility.getInt();
+      
+      String months[][]= {{" ","Jan","Feb",",Mar","Api","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"}};
+	   int[][] days= {{0,31,28,31,30,31,30,31,31,30,31,30,31}};
+	   
+	   if(month==2 && Utility.isleap(year)) 
+	    days[0][month]=29;
+	   
+	   int day=Utility.dayOfWeek(date, month, year);
+	   System.out.println(day);
+	    
+	   int i,j;
+	   for(i=0;i<day;i++) 
+	   {
+		   QueueForCalender.front=QueueForCalender.insert(QueueForCalender.front, 7, date);
+		   
+	   }
+        int tempday=day;
+        
+        for(j=0;j <= days[month];j++)
+        {
+        	if(tempday==7)
+        		tempday=0;
+        		
+        }
+}
+}

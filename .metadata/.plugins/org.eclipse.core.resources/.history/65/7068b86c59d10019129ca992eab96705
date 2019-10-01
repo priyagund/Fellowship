@@ -1,0 +1,16 @@
+package com.bridgelabz.datastructure;
+
+public class NodeGen<T> 
+{ 
+	private int data;
+    private NodeGen next;
+    
+ 
+
+     
+     public class LinkList
+     {
+    	 
+     }
+
+}

@@ -1,0 +1,10 @@
+package com.bridgelabz.model;
+
+public class Transaction {
+	private String transaction_id;
+	private String buyer;
+	private String seller;
+	private int transaction_amount;
+	private String datetime;
+
+}

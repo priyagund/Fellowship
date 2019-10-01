@@ -1,0 +1,13 @@
+package com.bridgelabz.dtatstructure;
+
+import com.bridgelazs.utility.Utility;
+
+public class DequeuePalindrome 
+{
+  public static void main(String[] args) 
+  {
+	System.out.println("enter string for check palindrome");
+	String str=Utility.getStr();
+	
+  }
+}

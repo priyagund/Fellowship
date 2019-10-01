@@ -1,0 +1,14 @@
+package com.bridgelabz.creational.singleton;
+
+public class EagerInitializedSingleton 
+{
+private static final EagerInitializationSingleton  instance = new EagerInitialization();
+    
+    //private constructor to avoid client applications to use constructor
+    private EagerInitializationSingleton (){}
+
+    public static EagerInitializationSingleton  getInstance(){
+        return instance;
+    }
+
+}

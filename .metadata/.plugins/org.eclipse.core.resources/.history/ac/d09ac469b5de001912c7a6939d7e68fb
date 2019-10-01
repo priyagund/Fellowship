@@ -1,0 +1,17 @@
+package com.bridgelabz.model;
+
+import java.util.ArrayList;
+
+public class PatientsModel 
+{ 
+	private ArrayList<Patients> patients;
+
+	public ArrayList<Patients> getPatients() {
+		return patients;
+	}
+
+	public void setPatients(ArrayList<Patients> patients) {
+		this.patients = patients;
+	}
+
+}

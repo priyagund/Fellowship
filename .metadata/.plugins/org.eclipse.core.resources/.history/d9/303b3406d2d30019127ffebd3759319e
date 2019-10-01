@@ -1,0 +1,24 @@
+package com.bridgelabz.datastructure;
+
+import com.bridgelazs.utility.Utility;
+
+public class InsertionSortForInt 
+{
+public static void main(String[] args) 
+{
+	int[] array=new int[7];
+	int i;
+	System.out.print("enter array element");
+    for( i=0;i<6;i++)
+    {
+    	array[i]=Utility.getInt();
+    }
+	System.out.println("before insertionsort"+ array[i]);
+	
+	Utility.InsertionSort(array);
+    System.out.print("array element after sort"+array[i] );
+	
+}
+	
+	
+}

@@ -1,0 +1,104 @@
+package com.bridgelabz.controller;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import org.codehaus.jackson.JsonParseException;
+import org.codehaus.jackson.map.JsonMappingException;
+import org.codehaus.jackson.map.ObjectMapper;
+
+import com.bridgelabz.model.Person;
+import com.bridgelabz.services.AddressBookNew;
+import com.bridgelazs.utility.OopsUtility;
+import com.bridgelazs.utility.Utility;
+
+public class AddressBookManager {
+
+	public static void main(String[] args) throws JsonParseException, JsonMappingException, IOException {
+	
+		ObjectMapper mapper=new ObjectMapper();
+		AddressBookNew addressBook=new AddressBookNew();
+		File addressbookFilename=null ;	
+		
+	List<Person> listOfPersons=new ArrayList<Person>(Arrays.asList(mapper.readValue(new File("/home/bridgeit/Desktop/priya/Felloship/CorePrograms/files/AddressBookData.json"), Person[].class)));
+
+     System.out.println("enter choice 1.create addressbook\n2.open addressbook\n3.save addressbook");
+       int outerchoice=Utility.getInt();
+       boolean exit=false;
+       while(!exit) 
+       {
+    	   switch(outerchoice) 
+           {
+           case 1://creat ddressbook
+        	   addressBook.createAddressBook();
+        	   System.out.println("you want to add person in new addressbook press 1 otherwise press 0");
+        	   int choice=Utility.getInt();
+        	   
+        	   if(choice==0) 
+        	    break;
+        	   
+        	   else
+        	   {
+        		   addressBook.addPerson(listOfPersons);
+        	   }
+        	   System.out.println("do you want to exit ");
+        	   OopsUtility.isExit();
+        	   break;
+        	   
+           case 2://open addressbook
+        	   addressBook.openAddressBook();
+        	   
+        	      System.out.println("enter choice 1.add person2.delete person\n3.edit person\n4.sort by last name\n5.sort by zipcode");
+                   int innerchoice=Utility.getInt();
+                     
+                  switch(innerchoice)
+                  {
+                  case 1://add person
+                	  addressBook.addPerson(listOfPersons);
+                	  break;
+                	  
+                  case 2: //delete person
+                	  addressBook.deletePerson(listOfPersons);
+                	  break;
+                	  
+                  case 3://edit person
+                	  addressBook.editPerson(listOfPersons);
+                	  break;
+                	  
+                  case 4://sort by last name
+                	  addressBook.sortByLastName(listOfPersons);
+                	  break;
+                	  
+                  case 5: //sort by zipcode
+                	  addressBook.sortByZipCode(listOfPersons);
+                	  break;
+                	  
+                  default:
+                	  System.out.println("you enter wrong choice");
+                  }
+                  break;
+                  //System.out.println("do you w");
+                  
+           case 3: //save addressbook
+        	   addressBook.saveAddressBook(listOfPersons,addressbookFilename);
+        	   break;
+        	   
+           }
+       }
+       
+     
+	addressBook.addPerson(listOfPersons);
+		addressBook.editPerson(listOfPersons);
+addressBook.deletePerson(listOfPersons);
+	addressBook.sortByLastName(listOfPersons);
+	addressBook.sortByZipCode(listOfPersons);
+	addressBook.createAddressBook();
+	addressBook.openAddressBook();
+	//addressBook.showAllAddressBook(listOfPersons);
+		System.out.println("save address book");
+	//	addressBook.saveAddressBook(listOfPersons, addressbookFilename);
+	}
+}

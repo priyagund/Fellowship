@@ -1,0 +1,10 @@
+package com.bridgelabz.model;
+
+import java.util.List;
+
+public class Operation 
+{
+   List<Doctors>doctor;
+   List<Patients>patient;
+   List<Appointment>appointment;
+}

@@ -1,0 +1,95 @@
+package com.bridgelabz.oops;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.codehaus.jackson.JsonGenerationException;
+import org.codehaus.jackson.map.JsonMappingException;
+import org.codehaus.jackson.map.ObjectMapper;
+
+import com.bridgelabz.model.Doctors;
+import com.bridgelabz.model.DoctorsModel;
+import com.bridgelabz.model.Patients;
+import com.bridgelabz.model.PatientsModel;
+import com.bridgelazs.utility.Utility;
+ public class Clinique
+ {
+	 public static void main(String[] args) throws JsonGenerationException, JsonMappingException, IOException
+	 {
+		ObjectMapper mapper=new ObjectMapper();
+		DoctorsModel doctormodel=new DoctorsModel();
+		PatientsModel patientsmodel=new PatientsModel();
+		
+		ArrayList<Doctors>doctorlist=new ArrayList<Doctors>();
+		ArrayList<Patients>patientlist=new ArrayList<Patients>();
+		
+		//adding doctor to clinique
+		 
+		Doctors doctorENT=new Doctors();
+		doctorENT.setId("ent");
+		doctorENT.setName("dr.Priyanka");
+		doctorENT.setSpecilization("ent");
+		doctorENT.setTime("am");
+		doctorENT.setIsfull(false);
+		doctorlist.add(doctorENT);
+		
+		Doctors doctorheart=new Doctors();
+		doctorheart.setId("heart");
+		doctorheart.setName("dr.shivanjali");
+		doctorheart.setSpecilization("heart");
+		doctorheart.setTime("am");
+		doctorheart.setIsfull(false);
+		doctorlist.add(doctorheart);
+		
+		Doctors doctorhomeo=new Doctors();
+		doctorhomeo.setId("homeo");
+		doctorhomeo.setName("dr.vaishnavi");
+		doctorhomeo.setSpecilization("homeo");
+		doctorhomeo.setTime("pm");
+		doctorhomeo.setIsfull(false);
+		doctorlist.add(doctorhomeo);
+		
+		Doctors doctordentist=new Doctors();
+		doctordentist.setId("dentist");
+		doctordentist.setName("dr.yashashri");
+		doctordentist.setSpecilization("dentist");
+		doctordentist.setTime("pm");
+		doctordentist.setIsfull(false);
+		doctorlist.add(doctordentist);
+		
+		Doctors doctorphysio=new Doctors();
+		doctorphysio.setId("physio");
+		doctorphysio.setName("dr.vishnu");
+		doctorphysio.setSpecilization("physio");
+		doctorphysio.setTime("pm");
+		doctorphysio.setIsfull(false);
+		doctorlist.add(doctorphysio);
+		
+		doctormodel.setDoctors(doctorlist);
+		mapper.writeValue(new File("/home/bridgeit/Desktop/priya/Felloship/CorePrograms/files/clinique.json"),doctormodel);
+		
+        // add patients list
+		boolean exit=false;
+	   while(!exit)
+	   {
+		   System.out.println("next patient");
+		   System.out.println("which specialist you want");
+		  for(int i=0;i<doctorlist.size();i++) 
+		  {
+			System.out.println((i+1)+"."+doctorlist.get(i).getSpecilization());  
+			
+		  }
+		  int selectSpecialization=Utility.getInt()-1;
+		  System.out.println("when you want to take appointment");
+		  String time=Utility.getStr();
+		  if(!time.equals(doctorlist.getTime().getSpecialization()));
+		  System.out.println("");
+	   }
+		
+		
+		
+		
+	}
+ }

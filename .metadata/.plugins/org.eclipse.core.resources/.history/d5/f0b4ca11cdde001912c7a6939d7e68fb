@@ -1,0 +1,51 @@
+package com.bridgelabz.model;
+
+public class Company {
+
+	private String companysymbol;
+	private String companyname;
+	private int numberofShare;
+	private int sharePrice;
+	private int totalValue;
+
+	public String getCompanysymbol() {
+		return companysymbol;
+	}
+
+	public void setCompanysymbol(String companysymbol) {
+		this.companysymbol = companysymbol;
+	}
+
+	public String getCompanyname() {
+		return companyname;
+	}
+
+	public void setCompanyname(String companyname) {
+		this.companyname = companyname;
+	}
+
+	public int getNumberofShare() {
+		return numberofShare;
+	}
+
+	public void setNumberofShare(int numberofShare) {
+		this.numberofShare = numberofShare;
+	}
+
+	public int getSharePrice() {
+		return sharePrice;
+	}
+
+	public void setSharePrice(int sharePrice) {
+		this.sharePrice = sharePrice;
+	}
+
+	public int getTotalValue() {
+		return totalValue;
+	}
+
+	public void setTotalValue(int totalValue) {
+		this.totalValue = totalValue;
+	}
+
+}

@@ -1,0 +1,31 @@
+package com.bridgelabz.services;
+
+import java.io.File;
+import java.io.IOException;
+
+import org.codehaus.jackson.JsonGenerationException;
+import org.codehaus.jackson.map.JsonMappingException;
+import org.codehaus.jackson.map.ObjectMapper;
+
+import com.bridgelazs.utility.Utility;
+
+public class AddressBookManagement
+{
+	
+	ObjectMapper mapper=new ObjectMapper();
+ public static  void creatAddressBook() throws JsonGenerationException, JsonMappingException, IOException
+ {   
+	 System.out.println("enter addressbook name");
+	   String addName="";
+	   addName=Utility.getStr();
+	  // System.out.println("Eneter file name");
+	   
+	   mapper.writeValue(new File("/home/bridgeit/Desktop/priya/Felloship/CorePrograms/files/"+addName+".json"),AddressBook.class); 
+     System.out.println("enter how many person add in addressbook");
+ }
+ 
+  public static void openAddressBook()
+   {
+	 System.out.println("enter addressbook name you want to open");
+   }
+}

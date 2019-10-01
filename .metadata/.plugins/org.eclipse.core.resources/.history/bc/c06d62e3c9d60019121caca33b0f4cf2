@@ -1,0 +1,34 @@
+package com.bridgelabz.dtatstructure;
+
+public class StackUsinLink<T> {
+	LinkedList<T> list = new LinkedList<T>();
+	int top = 0;
+
+	public void push(T data) {
+		stack.addElement(data);
+		top++;
+	}
+
+	public T pop() {
+		
+		if (!stack.isEmpty()) {
+			T data = list.get(top);
+			stack.delete(--top);
+			return data;
+		} else {
+			System.out.println("Nothing to pop");
+			return null;
+		}
+			
+		
+	}
+
+	public boolean isEmpty() {
+		return list.isEmpty();
+	}
+
+	public T peek() {
+		T data = list.get(top);
+		return data;
+	}
+}

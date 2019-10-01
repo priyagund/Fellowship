@@ -1,0 +1,66 @@
+package com.bridgelabz.dtatstructure;
+
+import com.bridgelazs.utility.Utility;
+
+public class Calendar {
+	public static void main(String[] args) {
+		String[][] a = new String[6][7];
+
+		System.out.println("enter month");
+		int month = Utility.getInt();
+		System.out.println("enter year");
+		int year = Utility.getInt();
+
+		String months[] = { " ", "January", "February", ",March", "April", "May", "Jun", "July", "August", "September",
+				"October", "November", "December" };
+		int[] days = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+
+		if (Utility.isleap(year))
+			days[2] = 29;
+
+		int day = Utility.dayOfWeek(1, month, year);
+		System.out.println(day);
+
+		System.out.println(" " + months[month] + " " + year);
+		System.out.println("  S  M  T  W  T  F  S ");
+
+		for (int i = 0; i < day; i++)
+			a[0][i] = "   ";
+
+		int tempDay = 0;
+		for (int i = 0; i < a.length; i++) {
+			for (int j = 0; j < a[i].length; j++) {
+				if (!(i == 0 && j < day)) {
+					if (tempDay < days[month]+day) {
+						tempDay++;
+						if (tempDay < 10) {
+							a[i][j] = "  " + tempDay;
+						} else {
+							a[i][j] = " " + tempDay;
+						}
+					} else {
+						break;
+					}
+				}
+			}
+
+		}
+
+		tempDay = 0;
+		for (int i = 0; i < a.length; i++) {
+			for (int j = 0; j < a[i].length; j++) {
+
+				if (tempDay < days[month]+day) {
+					tempDay++;
+					System.out.print(a[i][j]);
+				} else {
+					break;
+
+				}
+			}
+			System.out.println();
+		}
+		
+		
+	}
+}

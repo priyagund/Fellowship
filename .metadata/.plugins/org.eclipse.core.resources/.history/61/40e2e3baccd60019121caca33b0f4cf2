@@ -1,0 +1,19 @@
+
+/******************************************************************************
+*  Purpose:Create a Program which creates Banking Cash Counter where people
+           come in to deposit Cash and withdraw Cash.
+*
+*  @author  Priyanka gund
+*  @version 1.0
+*  @since   12-09-2019
+*
+******************************************************************************/
+package com.bridgelabz.dtatstructure;
+
+public class CashCounter 
+{
+public static void main(String[] args)
+{
+	
+}
+}

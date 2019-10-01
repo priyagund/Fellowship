@@ -1,0 +1,10 @@
+package com.bridgelabz.dtatstructure;
+
+public class Dequeue<T>
+{
+	static final int 
+
+	int rear; 
+	int front;
+	
+}

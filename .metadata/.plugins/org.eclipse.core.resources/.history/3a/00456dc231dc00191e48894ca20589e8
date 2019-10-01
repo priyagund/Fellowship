@@ -1,0 +1,55 @@
+/******************************************************************************
+* 
+ Purpose: Read in the following message: Hello <<name>>, We have your full
+		  name as <<full name>> in our system. your contact number is 91-xxxxxxxxxx.
+		  Please,let us know in case of any clarification Thank you BridgeLabz 01/01/2016.
+		  Use Regex to replace name, full name, Mobile#, and Date with proper value. 
+
+*
+*  @author  Priyanka gund
+*  @version 1.0
+*  @since   13-09-2019
+*
+******************************************************************************/
+package com.bridgelabz.oops;
+
+import java.util.Scanner;
+import java.util.regex.Pattern;
+
+import com.bridgelazs.utility.Utility;
+
+public class RegularExpression 
+{
+ public static void main(String[] args) 
+ {
+	Scanner scanner= new Scanner(System.in);
+	String firstName,MobNumber, fullName;
+	boolean match,match1,match2;
+	
+	do {
+		System.out.println("enter your firstname");
+		firstName=Utility.getStr();
+		
+		System.out.println("enter your mobNumber");
+		MobNumber=Utility.getStr();
+		
+		System.out.println("enter your lastname");
+		MobNumber=scanner.nextLine();
+		
+		if(match=Pattern.matches("+[a-zA-Z]+",firstName))
+		{
+			System.out.println();
+		}
+		else
+			System.out.println("please enter valid name");
+		 
+		if(match=Pattern.matches("^[a-zA-Z]{3,20}[\\s]{1}[a-zA-Z]{3,20}[\\s]{1}[a-zA-Z]{3,20}$", fullName));
+		
+		else
+			System.out.println("please enter valid fullname");
+		
+	}
+	
+	
+}
+}

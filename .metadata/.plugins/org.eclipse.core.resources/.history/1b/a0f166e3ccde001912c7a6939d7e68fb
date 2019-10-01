@@ -1,0 +1,10 @@
+package com.bridgelabz.model;
+
+public class Appointment 
+{
+ private String doctorname;;
+ private int doctorid;
+ private String availability;
+ private String specialization;
+ 
+}

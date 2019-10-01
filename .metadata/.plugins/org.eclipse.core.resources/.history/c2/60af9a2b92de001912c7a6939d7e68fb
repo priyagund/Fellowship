@@ -1,0 +1,10 @@
+package com.bridgelabz.model;
+
+public class Doctors
+{
+  private String name;
+  private int id;
+  private String Specilization;
+  private String time;
+  private boolean isfull;
+}

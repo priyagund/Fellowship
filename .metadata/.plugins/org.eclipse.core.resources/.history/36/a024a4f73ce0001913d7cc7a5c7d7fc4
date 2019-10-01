@@ -1,0 +1,11 @@
+package com.bridgelabz.model;
+
+public interface IPerson 
+{
+	public void addPerson();
+	public void editperson();
+	public void deletePerson();
+	public void sortByLastName();
+	public void sortByZip();
+	
+}

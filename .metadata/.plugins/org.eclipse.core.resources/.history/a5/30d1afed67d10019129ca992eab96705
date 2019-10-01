@@ -1,0 +1,71 @@
+package com.bridgelabz.datastructure;
+
+import java.util.LinkedList;
+
+public class LinkListForStr 
+{   
+	static NodeGen head;
+	
+	public static boolean isempty()
+	{
+		if(head==null)
+			return true;
+		
+		return false;
+	}
+	 public static void InsertAt(String str) 
+	{
+		NodeGen node=new NodeGen();
+		if(head==null) 
+		{
+			node=head;
+		}
+		else 
+		{
+			NodeGen n=head;
+			while(n.next!=null)
+			{
+              n=n.next;
+			}
+			n.next=node;
+		}
+	}
+		
+	 public static void  DeleteAt(int index)
+	 {
+		 NodeGen n,n1;
+	     n=head;
+	   if(index==0)
+		   head=head.next;
+	   else
+	 
+	    for(int i=0;i<index-1;i++) 
+	    {
+	    	n=n.next;
+	    }
+	     n1=n.next;
+	     n.next=n1.next;
+	    
+	 } 
+	 public static boolean SearchEleme(String str) {
+	   boolean x=true;
+		 if(isempty())
+		System.out.println("list is empty");
+	 
+			else 
+			{    
+				NodeGen n=head;
+				
+				for(int i=0;i<4;i++) 
+				{
+					if((n.data).equals(str)){
+					 x=false;
+					 break;
+					}	
+				}	
+			
+			}	
+		 return x;
+	 }	
+	
+}
