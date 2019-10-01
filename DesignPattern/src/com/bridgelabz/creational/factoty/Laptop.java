@@ -1,13 +1,11 @@
 package com.bridgelabz.creational.factoty;
 
-public class PC extends Computer
-{
-
+public class Laptop extends Computer{
 	private String ram;
 	private String hdd;
 	private String cpu;
 	
-	public PC(String ram, String hdd, String cpu){
+	public Laptop(String ram, String hdd, String cpu){
 		this.ram=ram;
 		this.hdd=hdd;
 		this.cpu=cpu;
