@@ -1,8 +1,7 @@
-package com.bridgelabz.structural;
+package com.bridgelabz.structural.adapter;
 
-import com.bridgelabz.structural.SocketAdaptor.SocketAdapter;
-
-public class AdapterPatternTest {
+public class AdapterPatternTest
+{
 
 	public static void main(String[] args) {
 		
@@ -39,3 +38,4 @@ public class AdapterPatternTest {
 		}
 	}
 }
+
