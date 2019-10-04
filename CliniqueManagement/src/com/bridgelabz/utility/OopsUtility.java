@@ -63,7 +63,6 @@ public static ObjectMapper mapper = new ObjectMapper();
 			}
 
 		}
-		System.out.println(doctor);
 		return doctor;
 	}
 

@@ -58,7 +58,7 @@ public class Clinique
 
 				System.out.println("Doctor added suuccessfully in clinic");
 				exit = OopsUtility.isExit();
-				mapper.writeValue(new File("/home/bridgeit/Desktop/priya/Felloship/CorePrograms/files/json files/patients.json"),
+				mapper.writeValue(new File("/home/bridgeit/Desktop/priya/Felloship/CorePrograms/files/json files/Doctor.json"),
 						modelDoctor);
 				break;
 

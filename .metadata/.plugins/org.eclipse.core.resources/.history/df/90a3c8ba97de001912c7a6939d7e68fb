@@ -1,9 +1,0 @@
-package com.bridgelabz.model;
-
-public class Patients 
-{
- private String name;
- private int id;
- private  String mobno;
- private int age;
-}

@@ -1,8 +1,0 @@
-package com.bridgelabz.model;
-
-public class Operation 
-{
-   List<Doctors>doctor;
-   List<Patient>patient;
-   List<Appointment>appointment;
-}

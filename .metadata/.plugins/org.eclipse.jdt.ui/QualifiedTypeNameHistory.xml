@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.model.DoctorsModel"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.model.PatientsModel"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.model.Patients"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.model.Doctors"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.model.CompanyModel"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.model.CustomerModel"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.model.Transaction"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.model.Customer"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.model.Company"/>
     <fullyQualifiedTypeName name="com.bridgelabz.model.CompanysharesModel"/>
     <fullyQualifiedTypeName name="com.bridgelabz.model.CustomerinfoModel"/>
     <fullyQualifiedTypeName name="com.bridgelabz.model.Customerinfo"/>
@@ -49,8 +37,27 @@
     <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
     <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
     <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.util.List"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.structural.SocketObjectAdapterImpl"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.structural.SocketClassAdapterImpl"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.structural.Volt"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.structural.adapter.SocketAdaptor.SocketAdapter"/>
+    <fullyQualifiedTypeName name="com.sun.jdi.connect.spi.Connection"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="com.sun.tools.javac.util.List"/>
     <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.model.JdbcImpl"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.repositary.JdbcConnectivity"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.services.Jdbc"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.protocol.Resultset"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.Statement"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.prepared.model.Student"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.model.Student"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.prepared.services.JdbcPrepared"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.statement.repositary.JdbcConnectivity"/>
 </qualifiedTypeNameHistroy>
