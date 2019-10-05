@@ -1,4 +1,4 @@
-package com.bridgelabz.prepared.repositary;
+package com.jdbc.savepoint.repository;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

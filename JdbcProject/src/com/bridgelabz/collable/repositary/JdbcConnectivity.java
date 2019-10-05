@@ -1,16 +1,15 @@
-package com.bridgelabz.prepared.repositary;
+package com.bridgelabz.collable.repositary;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class JdbcConnectivity 
-{
+public class JdbcConnectivity {
 	static String url = "jdbc:mysql://localhost:3306/college?verifyServerCertificate=false&useSSL=true";
 	static String username = "root";
 	static String password = "root";
 	static Connection con = null;
- 
+
 	public static Connection getConnection() 
 	{  
 		try {
@@ -26,4 +25,5 @@ public class JdbcConnectivity
 
 		return con;
 	}
+
 }

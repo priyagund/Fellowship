@@ -11,3 +11,6 @@
 1570168679432	Delete 3 resources
 1570168703696	Delete resource 'JdbcProject/src/com/bridgelabz/statement/services/ImplPreapared.java'
 1570168722258	Delete resource 'JdbcProject/src/com/bridgelabz/statement/model/JdbcImpl.java'
+1570249309005	Delete resource 'JdbcProject/src/com/bridgelabz/statement/model'
+1570273631911	Delete resource 'JdbcProject/src/com/bridgelabz/collable/BatchProcess.java'
+1570282383639	Delete resource 'JdbcProject/src/com/jdbc/savepoint/repository/JdbcConnectivity.java'

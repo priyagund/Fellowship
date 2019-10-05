@@ -2,12 +2,14 @@ package com.bridgelabz.prepared.services;
 
 import java.sql.SQLException;
 
+import com.bridgelabz.prepared.model.Student;
+
 public interface ImplPrepared
 {
-	public void insertDataPrepared(Object student) throws SQLException;
+	public int insertDataPrepared(Student student) throws SQLException;
 	public void readDataPrepared()throws SQLException;
-	public void updateDataPrepared(int id, Object student)throws SQLException;
-	public void deleteDataPrepared(int id)throws SQLException;
+	public int updateDataPrepared(int id, Student student)throws SQLException;
+	public int deleteDataPrepared(int id)throws SQLException;
 
  
 	

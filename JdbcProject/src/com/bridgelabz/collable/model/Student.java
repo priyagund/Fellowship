@@ -1,10 +1,10 @@
-package com.bridgelabz.prepared.model;
+package com.bridgelabz.collable.model;
 
-public class Student
-{ 
- private int id;
- private String name;
- private String address;
+public class Student 
+{
+  private int id;
+  private String name;
+  private String address;
 public int getId() {
 	return id;
 }
@@ -23,5 +23,5 @@ public String getAddress() {
 public void setAddress(String address) {
 	this.address = address;
 }
-
+  
 }
