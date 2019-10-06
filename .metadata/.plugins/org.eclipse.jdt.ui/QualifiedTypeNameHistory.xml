@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.bridgelabz.model.CompanysharesModel"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.model.CustomerinfoModel"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.model.Customerinfo"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.model.Companyshares"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.dtatstructure.LinkedList"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.model.TransactionModel"/>
-    <fullyQualifiedTypeName name="org.codehaus.jackson.JsonParseException"/>
     <fullyQualifiedTypeName name="com.bridgelabz.dtatstructure.StackUsinLink"/>
     <fullyQualifiedTypeName name="com.bridgelabz.model.Transactions"/>
     <fullyQualifiedTypeName name="com.bridgelabz.dtatstructure.Stack"/>
@@ -50,14 +43,21 @@
     <fullyQualifiedTypeName name="java.sql.DriverManager"/>
     <fullyQualifiedTypeName name="com.bridgelabz.repositary.JdbcConnectivity"/>
     <fullyQualifiedTypeName name="com.bridgelabz.services.Jdbc"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="com.mysql.cj.protocol.Resultset"/>
-    <fullyQualifiedTypeName name="java.sql.Connection"/>
-    <fullyQualifiedTypeName name="java.sql.Statement"/>
-    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
-    <fullyQualifiedTypeName name="com.bridgelabz.prepared.model.Student"/>
     <fullyQualifiedTypeName name="com.bridgelabz.model.Student"/>
-    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="com.bridgelabz.prepared.services.JdbcPrepared"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.prepared.model.Student"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.collable.services.JdbcCollable"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.collable.model.Student"/>
+    <fullyQualifiedTypeName name="java.sql.Statement"/>
+    <fullyQualifiedTypeName name="java.sql.CallableStatement"/>
+    <fullyQualifiedTypeName name="java.sql.Savepoint"/>
+    <fullyQualifiedTypeName name="com.jdbc.savepoint.service.SavePointTranscation"/>
     <fullyQualifiedTypeName name="com.bridgelabz.statement.repositary.JdbcConnectivity"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.loginpage.services.ImplStudentLogin"/>
+    <fullyQualifiedTypeName name="com.bridgelabz.loginpage.model.Student"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
