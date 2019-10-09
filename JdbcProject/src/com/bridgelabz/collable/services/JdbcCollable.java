@@ -19,7 +19,7 @@ public class JdbcCollable implements CallableImpl
 	{
 //		String query="call insertIntoStudent(?,?,?)";
 		try {
-			cs=con.prepareCall("call insertIntoStudent(?,?,?)");
+			cs=con.prepareCall("call insert_student(?,?,?)");
 			cs.setInt(1, (student).getId());
 			cs.setString(2, (student).getName());
 			cs.setString(3, (student).getAddress());
@@ -38,7 +38,7 @@ public class JdbcCollable implements CallableImpl
 	public void readDataCollable() 
 	{
 		try {
-			cs=con.prepareCall("call readStudent");
+			cs=con.prepareCall("call read_student");
 			ResultSet rs = cs.executeQuery();
 
 			while (rs.next()) {
@@ -59,7 +59,7 @@ public class JdbcCollable implements CallableImpl
 //		String query = "update student set name='" + student.getName() + "', address='"
 //				+ student.getAddress() + "' where id=" + id + "";
 		try {
-			cs = con.prepareCall("call updateStudent(?,?,?)");
+			cs = con.prepareCall("call update_student(?,?,?)");
 			cs.setInt(1, id);
 			cs.setString(2, student.getName());
 			cs.setString(3, student.getAddress());
@@ -76,7 +76,7 @@ public class JdbcCollable implements CallableImpl
 	public int deleteDataCollable(int id) 
 	{
 		try {
-			cs=con.prepareCall("call deleteDataStudent(?)");
+			cs=con.prepareCall("call delete_student(?)");
 			cs.setInt(1,id);
 			 return cs.executeUpdate();
 		} catch (SQLException e) {

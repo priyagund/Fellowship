@@ -3,7 +3,6 @@ package com.bridgelabz.collable.batch;
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.SQLException;
-import java.sql.Statement;
 
 import com.bridgelabz.statement.repositary.JdbcConnectivity;
 
@@ -20,7 +19,7 @@ public class BatchProcessCallable {
 	}
 
 	private static int[] executeAll() throws SQLException {
-		cst=con.prepareCall("call insertIntoStudent(?,?,?)");
+		cst=con.prepareCall("call insert_student(?,?,?)");
 		cst.setInt(1,21);
 		cst.setString(2, "ritu");
 		cst.setString(3,"panvel");

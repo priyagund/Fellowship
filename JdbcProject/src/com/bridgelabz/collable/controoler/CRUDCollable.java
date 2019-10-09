@@ -13,8 +13,8 @@ public class CRUDCollable {
 
 		while (exit) {
 
-			System.out
-					.println("enter choice\n1.insert value into table\n2.update value\n3.delete value\n4.read table\n5.exit ");
+			System.out.println(
+					"enter choice\n1.insert value into table\n2.update value\n3.delete value\n4.read table\n5.exit ");
 			int choice = scanner.nextInt();
 
 			switch (choice) {
@@ -49,11 +49,11 @@ public class CRUDCollable {
 				jdbc.readDataCollable();
 				System.out.println("enter id for delete the data");
 				int id1 = scanner.nextInt();
-                System.out.println(jdbc.deleteDataCollable(id1) +"data deleted successfully");
+				System.out.println(jdbc.deleteDataCollable(id1) + "data deleted successfully");
 				jdbc.readDataCollable();
 				break;
 
-			case 4://read data
+			case 4:// read data
 				jdbc.readDataCollable();
 				break;
 

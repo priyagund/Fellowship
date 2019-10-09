@@ -68,13 +68,16 @@ public class CRUDStatement {
 				break;
 			case 5:
 				exit = false;
-
+				System.out.println("Thank you");
+				break;
 			default:
 				System.out.println("you enter wrong choice");
 
 			}
 
 		}
+
+		scanner.close();
 
 	}
 

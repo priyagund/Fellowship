@@ -19,7 +19,7 @@ public class SavePointTranscation implements ImplSavePoint
 		try {
 			pst = con.prepareStatement(query);
 			con.setAutoCommit(false);
-			pst.setInt(1, 30);
+			pst.setInt(1, 32);
 			pst.setString(2, "pratu");
 			pst.setString(3, "pune");
 			pst.executeUpdate();
@@ -30,7 +30,7 @@ public class SavePointTranscation implements ImplSavePoint
 			 */
 			
 			Savepoint sp=con.setSavepoint();
-			pst.setInt(1, 26);
+			pst.setInt(1, 33);
 			pst.setString(2, "pooja");
 			pst.setString(3, "murud");
 			
