@@ -26,12 +26,12 @@ public class BatchPrepared
 		String query="insert into student values (?,?,?)";
 		
 		pst=con.prepareStatement(query);
-		pst.setInt(1,16);
+		pst.setInt(1,57);
 		pst.setString(2, "priyanka");
 		pst.setString(3, "latur");
 		pst.addBatch();
 		
-		pst.setInt(1,17);
+		pst.setInt(1,58);
 		pst.setString(2, "shree");
 		pst.setString(3, "pune");
 		pst.addBatch();

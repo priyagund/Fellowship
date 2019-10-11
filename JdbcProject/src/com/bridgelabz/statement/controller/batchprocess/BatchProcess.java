@@ -13,21 +13,31 @@ public class BatchProcess {
 	public static void main(String[] args) throws SQLException {
 		
 		int []result=executeAll();
+		int count=0;
 		for (int i = 0; i < result.length; i++) {
-			System.out.println(result[i]);
+			System.out.println("execute successfully");
+//			if(result[i]==1)
+//				count++;
+//			System.out.println(result[i]);
 		}
+		//System.out.println(count +"   "+result.length);
+//		if(count==result.length) {
+//			System.out.println("execute successfully");
+//		}
+//		else
+//			System.out.println("something went wrong");
 	}
 
 	private static int[] executeAll() throws SQLException {
 	    st=con.createStatement();
-		String query="insert into student values(13,'riya','pune')";
-		st.addBatch(query);
-		String queryInsert="insert into student values(14,'priya','pune')";
-		st.addBatch(queryInsert);
-		String queryUpdate="update student set name='priya' where id=14";
+//		String query="insert into student values(53,'riya','mumbai')";
+//		st.addBatch(query);
+//		String queryInsert="insert into student values(54,'priya','pune')";
+//		st.addBatch(queryInsert);
+	    String queryUpdate="update student set name='priya' where id=21";
 		st.addBatch(queryUpdate);
-		String queryDelete="delete from student where id=1";
-		st.addBatch(queryDelete);
+//		String queryDelete="delete from student where id=53";
+//		st.addBatch(queryDelete);
 		return st.executeBatch();
 	}
 

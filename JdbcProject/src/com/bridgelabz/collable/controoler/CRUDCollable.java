@@ -59,6 +59,7 @@ public class CRUDCollable {
 
 			case 5:
 				exit = false;
+				break;
 
 			default:
 				System.out.println("you enter wrong choice");

@@ -21,8 +21,8 @@ public class Jdbc implements JdbcImpl {
 	 *
 	 */
 	public void insertDataStatment(Student student) throws SQLException {
-		String query = "insert into student values(" + ((Student) student).getId() + "," + " '"
-				+ ((Student) student).getName() + "','" + ((Student) student).getAddress() + "')";
+		String query = "insert into student values(" +  student.getId() + "," + " '"
+				+  student.getName() + "','" + student.getAddress() + "')";
 
 		st = con.createStatement();
 

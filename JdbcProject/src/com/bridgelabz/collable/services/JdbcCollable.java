@@ -21,8 +21,8 @@ public class JdbcCollable implements CallableImpl
 		try {
 			cs=con.prepareCall("call insert_student(?,?,?)");
 			cs.setInt(1, (student).getId());
-			cs.setString(2, (student).getName());
-			cs.setString(3, (student).getAddress());
+			cs.setString(3, (student).getName());
+			cs.setString(2, (student).getAddress());
 			 return cs.executeUpdate();
 
 		} catch (SQLException e) {

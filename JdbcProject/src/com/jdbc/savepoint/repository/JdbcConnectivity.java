@@ -15,7 +15,7 @@ public class JdbcConnectivity
 	{  
 		try {
 			con = DriverManager.getConnection(url, username, password);
-			Class.forName("com.mysql.cj.jdbc.Driver");
+			Class.forName("com.mysql.jdbc.Driver");
 		} catch (ClassNotFoundException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
